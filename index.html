@@ -3,14 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>E-CAFE</title>
-    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/boostrap/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/e_cafe.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/customer.css">
+    <link rel="stylesheet" href="assets/css/item.css">
+    <link rel="stylesheet" href="assets/css/order.css">
 </head>
 <body>
 <main>
+    <!--/////Nav Bar////-->
+    <nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle">
+        <div class="container-fluid">
+            <a id="samplePos" class="navbar-brand gradient-text" href="#">E-Cafe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menuBar">
+                    <li class="nav-item">
+                        <a class="nav-link active gradient-text" id="home_page" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gradient-text" id="customer_page" href="customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gradient-text" id="item_page" href="item.html">Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gradient-text" id="order_page" href="order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gradient-text" id="order_details_page" href="orderDetail.html">Order Details</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" id="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Text Here" aria-label="Search">
+                    <button class="btn btn-outline-success gradient-text" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
 
     <script src="assets/js/jQuery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/e-cafe.js"></script>
 </main>
 </body>
 </html>
